@@ -1,0 +1,126 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body{
+    height: 100vh;
+}
+
+nav.menu-lateral {
+    width: 80px;
+    height: 100%;
+    background-color: rgb(61, 61, 61);
+    padding: 40px 0 40px 1%;
+    box-shadow: 3px 0 0 rgb(165, 30, 30);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .5s;
+
+}
+
+nav.menu-lateral.expandir{
+    width: 300px;
+}
+.btn-expandir {
+    width: 100%;
+    padding-left: 10px;
+
+}
+.btn-expandir > i{
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+
+}
+
+ul{
+    height: 100%;
+    list-style-type: none;
+
+}
+ul li.item-menu{
+    transition: .2s;
+
+}
+
+ul li.ativo{
+    background-color: rgb(165, 30, 30);
+}
+ul li.item-menu:hover{
+    background-color: rgb(165, 30, 30);
+}
+
+ul li.item-menu a{
+    color: white;
+    text-decoration: none;
+    font-size: 28px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 40px;
+
+}
+
+ul li.item-menu a .txt-link{
+    margin-left: 70px;
+    transition: .8s;
+    opacity: 0;
+}
+nav.menu-lateral.expandir .txt-link{
+    margin-left: 40px;
+    opacity: 1;
+}
+
+ul li.item-menu a .icon > i{
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+
+nav.navbar{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(61, 61, 61);
+    top: 0;
+    left: 0;
+    padding: 25px 15px 0 1%;
+    box-shadow: 0 0 0 3px rgb(165, 30, 30);
+}
+
+
+ul.nav-head {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 100px;
+    
+    
+}
+ul li.pedido {
+    color: white;
+    font-size: 18px;
+
+}
+
+div.criar a{
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    list-style-type: none;
+    text-decoration: none;
+}
+div.criar a:hover{
+    background-color: rgb(165, 30, 30);
+    transition: .1s;
+    padding: 5px;
+}
+
+
+
